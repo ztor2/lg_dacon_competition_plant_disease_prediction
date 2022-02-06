@@ -4,7 +4,7 @@
 - [대회 페이지](https://dacon.io/competitions/official/235870/overview/description)
 
 #### Edit log
-- torch_aug_with_part_bbx 함수 indentation 오류 수정(02.06)
+- torch_aug_with_part_bbx 함수 indentation 오류 수정, 불필요 변수(labels_str_oversampled) 제거(02.06)
 <br>
 
 #### 개발 환경
