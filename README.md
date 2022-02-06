@@ -50,9 +50,9 @@ timm: 0.5.4
 
 #### 학습 전략 및 파라미터 설정
 
-- 학습 모델은 timm 라이브러리의 efficientnet 계열 모델 중 하나인 pre-trained tinynet_a(Han et al., 2020) 모델을 사용했고, 시계열 데이터는 baseline 코드의 LSTM 모델을 그대로 사용했습니다. Tinynet이 특별히 성능이 더 우수하기보다는 다른 모델에 비해 loss 변화가 안정적으로 관찰되어 사용했습니다. 
+- 학습 모델은 timm 라이브러리의 efficientnet 계열 모델 중 하나인 pre-trained tinynet_a(Han et al., 2020) 모델을 사용했고, 시계열 데이터에는 baseline 코드의 LSTM 모델을 그대로 사용했습니다. Tinynet이 특별히 성능이 더 우수하기보다는 다른 모델에 비해 loss 변화가 안정적으로 관찰되어 사용했습니다. 
 
-- 또한, 일정 수준의 score를 달성한 이후 validation score와 submission score가 비례하지 않는 현상이 있어 불량 데이터가 상당수 있다고 생각했습니다. 다른 참가자분들도 EDA를 통해 이에 대한 문제를 제기한 것으로 알고 있습니다. 저의 경우 label smoothing 수치를 극단적으로 높게 주어 모델의 confidence를 최대한 낮추는 방향으로 접근했습니다. Label 수를 고려했을 때에 0.9-0.95까지 label smoothing 값을 줄 수 있다고 판단해 설정했고, validation score가 98을 넘지 않도록 epoch이나 learning rate를 설정했습니다. 이로써 train 데이터에 대한 과적합을 최대한 피하고자 했고, 97 중후반대의 validation score에서 가장 높은 submission score를 확인할 수 있었습니다.
+- 일정 수준의 score를 달성한 이후 validation score와 submission score가 비례하지 않는 현상이 있어 불량 데이터가 상당수 있다고 생각했습니다. 다른 참가자분들도 EDA를 통해 이에 대한 문제를 제기한 것으로 알고 있습니다. 저의 경우 label smoothing 수치를 극단적으로 높게 주어 모델의 confidence를 최대한 낮추는 방향으로 접근했습니다. Label 수를 고려했을 때에 0.9-0.95까지 label smoothing 값을 줄 수 있다고 판단해 설정했고, validation score가 98을 넘지 않도록 epoch이나 learning rate를 설정했습니다. 이로써 train 데이터에 대한 과적합을 최대한 피하고자 했고, 97 중후반대의 validation score에서 가장 높은 submission score를 확인할 수 있었습니다.
 <br>
 
 #### 모델 한계
