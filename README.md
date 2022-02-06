@@ -1,7 +1,7 @@
 ## 농업 환경 변화에 따른 작물 병해 진단 AI 경진대회
 ### Private score 6위(0.95324) 제출 코드 및 설명
 - 주최 및 주관: LG AI Research, 데이콘
-- 대회 페이지: https://dacon.io/competitions/official/235870/overview/description
+- [대회 페이지](https://dacon.io/competitions/official/235870/overview/description)
 <br>
 
 #### Edit log
@@ -45,7 +45,7 @@ timm: 0.5.4
 - bounding box specific 증강 함수는 이미지를 카피하여 랜덤하게 이미지 증강을 수행하고, 원래 이미지에 증강한 이미지의 bounding box 부분만(또는 bounding box 바깥 부분만) 잘라 붙이는 방식으로 증강을 수행합니다. 기본 bounding box 외에도 병해 부위에 대한 bounding box에도 같은 방식으로 증강을 수행했습니다. 이를 편의상 target augmentation이라 명명했습니다.
 - Cutmix와 random erase 함수도 사용했었는데, 테스트 결과 validation 성능은 올라가지만 submission 시 성능이 하락하는 현상이 관찰되어 배제했습니다. 
 - 전반적으로 증강에 있어 무작위성을 최대한 많이 부여하려 했습니다. 그리고 데이터 imbalance를 고려해 일정 비율로 데이터 oversampling을 수행했습니다.
-- 이미지 증강 example은 데이콘 대회 페이지 토크 게시판에 별도로 업로드할 예정입니다. 
+- [이미지 증강 example](https://dacon.io/competitions/official/235870/talkboard/405943?page=1&dtype=recent)
 <br>
 
 #### 학습 전략 및 파라미터 설정
