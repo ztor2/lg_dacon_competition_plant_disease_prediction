@@ -4,6 +4,8 @@
 - 대회 페이지: https://dacon.io/competitions/official/235870/overview/description
 <br>
 
+- torch_aug_with_part_bbx 함수 indentation 오류 수정(02.06)
+
 #### 개발 환경
 
 - 모든 실험은 Google Colab Pro Plus 환경에서 수행되었습니다.\
