@@ -2,7 +2,6 @@
 ### Private score 6위(0.95324) 제출 코드 및 설명
 - 주최 및 주관: LG AI Research, 데이콘
 - [대회 페이지](https://dacon.io/competitions/official/235870/overview/description)
-<br>
 
 #### Edit log
 - torch_aug_with_part_bbx 함수 indentation 오류 수정(02.06)
