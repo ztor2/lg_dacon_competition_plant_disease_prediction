@@ -1,7 +1,10 @@
 ## 농업 환경 변화에 따른 작물 병해 진단 AI 경진대회
 ### Private score 6위(0.95324) 제출 코드 및 설명
 - 주최 및 주관: LG AI Research, 데이콘
-- 대회 페이지: https://dacon.io/competitions/official/235870/overview/description
+- [대회 페이지](https://dacon.io/competitions/official/235870/overview/description)
+
+#### Edit log
+- torch_aug_with_part_bbx 함수 indentation 오류 수정(02.06)
 <br>
 
 #### 개발 환경
@@ -22,7 +25,8 @@ torchvision: 0.11.1+cu111\
 skimage: 0.18.3\
 sklearn: 1.0.2\
 timm: 0.5.4
-- 전처리 포함 학습 완료 시간은 주어진 개발 환경에서 80 epoch 기준 약 130분 정도입니다.
+- 전처리 포함 학습 완료 시간은 주어진 개발 환경에서 80 epoch 기준 약 130분입니다.
+- 데이터는 Colab 드라이브의 data 폴더에 train과 test 파일이 압축파일 상태로 존재한다고 가정합니다.  
 - Colab 환경일 경우, 코드 하단에서 model_save_path와 model_save_name을 지정하고 모든 셀 실행을 수행하면 됩니다. 
 - Colab 환경이 아닐 경우 코드 상단의 train 데이터 경로 수정 과정만 추가하여 실행하면 됩니다.
 <br>
@@ -41,7 +45,7 @@ timm: 0.5.4
 - bounding box specific 증강 함수는 이미지를 카피하여 랜덤하게 이미지 증강을 수행하고, 원래 이미지에 증강한 이미지의 bounding box 부분만(또는 bounding box 바깥 부분만) 잘라 붙이는 방식으로 증강을 수행합니다. 기본 bounding box 외에도 병해 부위에 대한 bounding box에도 같은 방식으로 증강을 수행했습니다. 이를 편의상 target augmentation이라 명명했습니다.
 - Cutmix와 random erase 함수도 사용했었는데, 테스트 결과 validation 성능은 올라가지만 submission 시 성능이 하락하는 현상이 관찰되어 배제했습니다. 
 - 전반적으로 증강에 있어 무작위성을 최대한 많이 부여하려 했습니다. 그리고 데이터 imbalance를 고려해 일정 비율로 데이터 oversampling을 수행했습니다.
-- 이미지 증강 example은 데이콘 대회 페이지 토크 게시판에 별도로 업로드할 예정입니다. 
+- [이미지 증강 example](https://dacon.io/competitions/official/235870/talkboard/405943?page=1&dtype=recent)
 <br>
 
 #### 학습 전략 및 파라미터 설정
