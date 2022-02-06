@@ -26,6 +26,7 @@ skimage: 0.18.3\
 sklearn: 1.0.2\
 timm: 0.5.4
 - 전처리 포함 학습 완료 시간은 주어진 개발 환경에서 80 epoch 기준 약 130분입니다.
+- 데이터는 Colab 드라이브의 data 폴더에 train과 test 파일이 압축파일 상태로 존재한다고 가정합니다.  
 - Colab 환경일 경우, 코드 하단에서 model_save_path와 model_save_name을 지정하고 모든 셀 실행을 수행하면 됩니다. 
 - Colab 환경이 아닐 경우 코드 상단의 train 데이터 경로 수정 과정만 추가하여 실행하면 됩니다.
 <br>
