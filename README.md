@@ -63,5 +63,7 @@ timm==0.5.4
 <br>
 
 #### 참고문헌
-추가 예정
+- Zhang, H., Cisse, M., Dauphin, Y. N., & Lopez-Paz, D. (2017). mixup: Beyond empirical risk minimization. arXiv preprint arXiv:1710.09412.
+- Han, K., Wang, Y., Zhang, Q., Zhang, W., Xu, C., & Zhang, T. (2020). Model rubik’s cube: Twisting resolution, depth and width for tinynets. Advances in Neural Information Processing Systems, 33, 19353-19364.
+- https://github.com/uchidalab/time_series_augmentation/blob/master/example.ipynb
 
