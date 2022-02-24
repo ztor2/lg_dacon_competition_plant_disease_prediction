@@ -40,7 +40,7 @@ timm==0.5.4
 
 #### 이미지 증강 함수
 
-- 사용된 이미지 증강 함수는 코드에서 확인하실 수 있으며, 기본적인 증강 함수 외에 추가한 부분은 edge detection을 이용한 증강 함수와 bounding box specific 증강 함수, mixup 정도입니다.
+- 사용된 이미지 증강 함수는 코드에서 확인하실 수 있으며, 기본적인 증강 함수 외에 추가한 부분은 edge detection을 이용한 증강 함수와 bounding box specific 증강 함수, mixup(Zhang et al., 2017) 정도입니다.
 - edge 증강의 경우 openCV의 Canny, Sobel, Laplacian 함수 중 하나로 edge를 detection한 후 원래 이미지와 합치는 방식으로 증강을 수행합니다.
 - bounding box specific 증강 함수는 이미지를 카피하여 랜덤하게 이미지 증강을 수행하고, 원래 이미지에 증강한 이미지의 bounding box 부분만(또는 bounding box 바깥 부분만) 잘라 붙이는 방식으로 증강을 수행합니다. 기본 bounding box 외에도 병해 부위에 대한 bounding box에도 같은 방식으로 증강을 수행했습니다. 이를 편의상 target augmentation이라 명명했습니다.
 - Cutmix와 random erase 함수도 사용했었는데, 테스트 결과 validation 성능은 올라가지만 submission 시 성능이 하락하는 현상이 관찰되어 배제했습니다. 
