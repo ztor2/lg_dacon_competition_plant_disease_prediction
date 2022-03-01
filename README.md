@@ -6,7 +6,7 @@
 #### Edit log
 - torch_aug_with_part_bbx 함수 indentation 오류 수정, 불필요 변수(labels_str_oversampled) 제거(22.02.06)
 - 참고문헌 추가(22.02.24)
-- 최종 제출한 학습 및 평가 코드 업로드, 최고 submission score를 달성한 학습 완료된 파라미터 파일 업로드(22.03.01)
+- 최종 제출 코드 업로드, 최고 submission score를 달성한 학습 완료된 파라미터 파일 업로드(22.03.01)
 <br>
 
 #### 개발 환경
