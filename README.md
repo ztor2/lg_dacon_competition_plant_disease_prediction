@@ -6,6 +6,7 @@
 #### Edit log
 - torch_aug_with_part_bbx 함수 indentation 오류 수정, 불필요 변수(labels_str_oversampled) 제거(22.02.06)
 - 참고문헌 추가(22.02.24)
+- 최종 제출한 학습 및 평가 코드 업로드, 최고 submission score를 달성한 학습 완료된 파라미터 파일 업로드.
 <br>
 
 #### 개발 환경
@@ -27,9 +28,18 @@ skimage==0.18.3\
 sklearn==1.0.2\
 timm==0.5.4
 - 전처리 포함 학습 완료 시간은 주어진 개발 환경에서 80 epoch 기준 약 130분입니다.
-- 데이터는 Colab 드라이브의 data 폴더에 train과 test 파일이 압축파일 상태로 존재한다고 가정합니다.  
-- Colab 환경일 경우, 코드 하단에서 model_save_path와 model_save_name을 지정하고 모든 셀 실행을 수행하면 됩니다. 
-- Colab 환경이 아닐 경우 코드 상단의 train 데이터 경로 수정 과정만 추가하여 실행하면 됩니다.
+- 해당 코드는 코드가 저장된 경로에 data 폴더가 있고, 그 안에 train, test 폴더 형태로 데이터가 주어져있다고 가정합니다.
+- 또한, '리더보드 점수 복원이 가능한 학습이 완료된 모델'과 submission template 파일인 sample_submission.csv 파일이 data 폴더 내에 포함되어 있다고 가정합니다.
+- 학습이 완료된 모델과 추론이 완료된 submission 파일은 data 폴더 내에 저장됩니다.
+- 코드 실행 전, root 경로를 코드가 저장된 경로로 변경하여야 합니다.
+
+**train.ipynb 실행 방법**
+1. 첫 셀에서 모델 저장 경로, 모델 저장 이름 설정.
+2. 이후의 모든 셀 실행.
+
+**test.ipynb 실행 방법**
+1. 첫 셀에서 저장된 모델 경로, 저장된 모델 이름, 저장할 submission 파일 이름 설정.
+2. 이후의 모든 셀 실행.
 <br>
 
 #### 환경 데이터
