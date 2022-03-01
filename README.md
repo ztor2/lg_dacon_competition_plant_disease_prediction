@@ -1,5 +1,5 @@
 ## 농업 환경 변화에 따른 작물 병해 진단 AI 경진대회
-### 최종 순위 3위 / Private score 6위(0.95324) 제출 코드 및 설명
+### 최종 순위 3위 & Private score 6위(0.95324) 제출 코드 및 설명
 - 주최 및 주관: LG AI Research, 데이콘
 - [대회 페이지](https://dacon.io/competitions/official/235870/overview/description)
 
